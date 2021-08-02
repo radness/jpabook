@@ -38,14 +38,14 @@ public class JpaMain {
         String id = "id1";
         Member member = new Member();
         member.setId(id);
-        member.setUsername("지한");
-        member.setAge(2);
+        member.setUsername("영훈");
+        member.setAge(20);
 
         //등록
         em.persist(member);
 
         //수정
-        member.setAge(20);
+        member.setAge(32);
 
         //한 건 조회
         Member findMember = em.find(Member.class, id);
