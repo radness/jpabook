@@ -1,10 +1,10 @@
 package jpabook.start;
 
-import javax.persistence.*;  //**
+import javax.persistence.*;  // JPA가 제공해주는 어노테이션 패키지
 
 /**
- * User: HolyEyE
- * Date: 13. 5. 24. Time: 오후 7:43
+ * User: Radness
+ * Date: 21. 08. 02. Time: 오후 10:43
  */
 @Entity
 @Table(name="MEMBER")
@@ -19,6 +19,7 @@ public class Member {
 
     private Integer age;
 
+    // Getter & Setter
     public String getId() {
         return id;
     }
